@@ -10,6 +10,10 @@
   background: #ffffff;
   width: 264px;
   border-radius: 0 0 4px 4px;
+  box-shadow:
+    0px 2px 1px 0px #2e2f4214,
+    0px 1px 1px 0px #2e2f4229,
+    0px 1px 6px 0px #2e2f4214;
 }
 .team-list img {
   display: block;
@@ -33,7 +37,7 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
-   margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 .profession {
   font-size: 16px;
@@ -41,4 +45,35 @@
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
+}
+.svg-social-media {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 8px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+}
+.social-link svg {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+  display: block;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
+}
+.social-link:hover svg,
+.social-link:focus svg {
+  fill: #ffffff; 
 }

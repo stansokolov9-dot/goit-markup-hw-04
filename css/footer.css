@@ -16,10 +16,52 @@
   display: inline-block;
   margin-bottom: 16px;
 }
-.footer-text {
+.footer-text-left {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-   max-width: 264px;
+  max-width: 264px;
+}
+.footer .container {
+  display: flex;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+}
+.footer-text-right {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  padding-bottom: 16px;
+}
+.footer-svg {
+  display: flex;
+  gap: 16px;
+}
+.footer-svg a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+}
+.footer-svg svg {
+  display: block;
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.footer-svg a:hover,
+.footer-svg a:focus {
+  background-color: #31d0aa;
 }
